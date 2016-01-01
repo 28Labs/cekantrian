@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CekAntrian</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="<%= index_path%>" class="brand-logo">CekAntrian</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="<%= latest_path%>">Latest</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li class="no-padding"><a href="#">SPBU</a></li>
+        <li class="no-padding"><a href="#">Rumah Makan</a></li>
+        <li class="no-padding"><a href="#">Bank</a></li>
+        <li class="no-padding"><a href="#">Klinik</a></li>
+        <li class="no-padding"><a href="#">Transportasi</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+<%= yield %>
+
+<footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!">Term</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!">Help</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Provided by <a class="brown-text text-lighten-3" href="http://28labs.aplikasi.asia">28labs</a> with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
